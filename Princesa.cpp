@@ -16,6 +16,6 @@ bool existe( vector<int>& fila, int n)
 
 int main()
 { 
-    bool flag = existe();
+  
 
 }
