@@ -8,9 +8,8 @@ void mostrar(vector<string> map)
 {
     for (auto line : map){
         cout << line << endl;
+        cout << endl;
     }
-    getchar();
-
 }
 
 void queimar(vector<string> map, int lpos, int cpos)
@@ -32,7 +31,9 @@ void queimar(vector<string> map, int lpos, int cpos)
     queimar(map, lpos - 1, cpos);
     queimar(map, lpos, cpos + 1);
     queimar(map, lpos + 1, cpos);
-    
+
+    map[lpos][cpos] = '*';
+    mostrar(map);
 }
 
 int main() 
